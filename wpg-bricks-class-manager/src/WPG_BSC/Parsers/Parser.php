@@ -49,6 +49,7 @@ class Parser
 
     private function parse_vars($array = []){
         $unique = array_unique($array);
+        sort($unique);
         $this->_parsed_variables = $unique;
     }
 

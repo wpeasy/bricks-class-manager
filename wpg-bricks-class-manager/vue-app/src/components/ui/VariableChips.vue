@@ -28,7 +28,7 @@ defineProps({
 const appStore = useAppStateStore()
 
 const onClick = (name)=>{
-  navigator.clipboard.writeText(name)
+  navigator.clipboard.writeText("var(" + name + ")")
   appStore.showTimedNotice('Copied to clipboard')
 }
 </script>
