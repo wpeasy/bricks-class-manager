@@ -13,3 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changes
 - Imported variables now sort alphabetically
 - Wrap click to copy variables in var().e.g. --test copied as var(--test)
+
+## [0.0.3] Update
+
+### Updates
+- Added "Variables" Tab to main page for easier access.

@@ -1,20 +1,20 @@
 <template>
   <v-app >
     <Notices/>
-
     <v-card >
       <v-tabs
           v-model="tab"
           bg-color="primary"
           @update:modelValue="handleTabChange"
-
       >
         <v-tab value="active" color="accent" :transition="false">Active Classes</v-tab>
+        <v-tab value="variables" color="variables" :transition="false">Variables</v-tab>
         <v-tab value="manage" color="accent"  :transition="false">Manage Sets</v-tab>
       </v-tabs>
 
       <v-card-text>
         <div v-show="tab === 'active'"><ActivePage/></div>
+        <div v-show="tab === 'variables'"><VariablesPage/></div>
         <div v-show="tab === 'manage'"><ManagePage/></div>
       </v-card-text>
     </v-card>
@@ -28,6 +28,7 @@ import ManagePage from "./views/ManagePage.vue";
 import {useGlobalClassStore} from './stores/GlobalClasses.js'
 import {useImportedClassStore} from './stores/ImportedClasses.js'
 import Notices from "./components/ui/Notices.vue";
+import VariablesPage from "./views/VariablesPage.vue";
 
 
 const tab = ref(null)
@@ -44,6 +45,10 @@ const handleTabChange =  name =>{
     case 'manage':
       importedStore.getData()
       break;
+
+    case 'variables':
+      importedStore.getData()
+
   }
 
 }
