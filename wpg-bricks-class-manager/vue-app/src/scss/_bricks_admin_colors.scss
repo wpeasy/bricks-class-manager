@@ -1,0 +1,52 @@
+:root {
+    --builder-border-radius: 4px;
+    --builder-box-shadow: 0 0 12px rgba(0,0,0,.4);
+    --builder-input-height: 32px;
+    --builder-popup-input-height: 40px;
+    --builder-element-action-size: 22px;
+    --builder-spacing: 20px;
+    --builder-placeholder-opacity: 0.33;
+    --builder-color-element: #1ebea5;
+    --builder-color-container: #d5419e;
+    --builder-color-container-root: #f7931e;
+    --builder-color-container-level-1: #1b98e0;
+    --builder-gray-0: #010101;
+    --builder-gray-1: #121417;
+    --builder-gray-2: #23282d;
+    --builder-gray-3: #343c43;
+    --builder-gray-4: #454f59;
+    --builder-gray-5: #56636f;
+    --builder-gray-6: #687685;
+    --builder-gray-7: #7b8a99;
+    --builder-gray-8: #8694a1;
+    --builder-gray-9: #9da8b2;
+    --builder-gray-a: #a8b1bb;
+    --builder-gray-b: #bec5cc;
+    --builder-gray-c: #c9cfd5;
+    --builder-gray-d: #d4d9dd;
+    --builder-gray-e: #eaecef;
+    --builder-gray-f: #f5f6f7;
+    --builder-canvas-scrollbar-track: var(--builder-gray-e);
+    --builder-canvas-scrollbar-thumb: var(--builder-gray-c);
+    --builder-canvas-scrollbar-thumb_hover: var(--builder-gray-a);
+    --builder-bg: var(--builder-gray-2);
+    --builder-bg-2: var(--builder-gray-3);
+    --builder-bg-3: var(--builder-gray-4);
+    --builder-bg-accent: #5c5334;
+    --builder-color-accent: #ffd64f;
+    --builder-color-accent-inverse: #121417;
+    --builder-color: #e0e3e5;
+    --builder-color-description: #85878b;
+    --builder-border-color: var(--builder-gray-4);
+    --builder-color-knob: var(--builder-gray-8);
+}
+
+.builder-bg{ background-color: var(--builder-gray-2) }
+.builder-bg--2{ background-color: var(--builder-gray-3) }
+.builder-bg--3{ background-color: var(--builder-gray-4) }
+.builder-bg--accent{ background-color: var(--builder-color-accent) }
+
+.builder-color{ color: var(--builder-gray-2) }
+.builder-color--2{ color: var(--builder-gray-3) }
+.builder-color--3{color: var(--builder-gray-4) }
+.builder-color--accent{ color: var(--builder-color-accent) }

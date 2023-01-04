@@ -1,0 +1,17 @@
+{
+    "name": "alan.blair/wpg-bricks-vue-app",
+    "description": "Plugin for missing feature to sort Global Classes",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "WPG_BSC\\": "src/WPG_BSC"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alan.Blair",
+            "email": "alan@wpget.au"
+        }
+    ],
+    "require": {}
+}
