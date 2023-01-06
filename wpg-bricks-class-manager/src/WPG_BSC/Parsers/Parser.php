@@ -24,7 +24,7 @@ class Parser
 
         if($this->_original_file = file_get_contents($url)){
             /*Classes */
-            preg_match_all("/\.([^\d\s][_A-Za-z0-9\-]+[^\b\s\+\~\>\.])[^}]*{/m", $this->_original_file , $matches);
+            preg_match_all("/\.([^\d][0-9a-z-A-Z_\-]+[^.,{])/m", $this->_original_file , $matches);
             $this->parse_classes($matches[1]);
 
             /* Vars */
@@ -33,6 +33,7 @@ class Parser
         }else{
             return new \WP_Error(400, __('Parser error getting url ' . $url ));
         }
+
     }
 
     private function parse_classes($array = []){

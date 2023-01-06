@@ -18,3 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Updates
 - Added "Variables" Tab to main page for easier access.
+
+## [0.0.4] Fixes
+
+### Fixes
+- Changed class regex to better extract classes. /\\.\[^0-9\](\[A-Za-z\\d\\-_\]+)/
