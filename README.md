@@ -6,7 +6,7 @@ my original regex was based on my own framework and did not take into considerat
 
 I have updated the regex which correctly extracts class names with the following test CSS.
 
-The tricky part was extracting teh class names and not the floats.
+The tricky part was extracting the class names and not the floats.
 
 Regex: /\.([^\d][0-9a-z-A-Z_\-]+[^.,{])/
 
