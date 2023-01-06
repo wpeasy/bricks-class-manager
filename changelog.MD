@@ -22,4 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.4] Fixes
 
 ### Fixes
-- Changed class regex to better extract classes. /\\.\[^0-9\](\[A-Za-z\\d\\-_\]+)/
+- Changed class regex to better extract classes.
+<pre><code>
+/\.([^\d][0-9a-z-A-Z_\-]+[^.,{])/
+</code></pre>
