@@ -1,6 +1,6 @@
 # bricks-class-manager
 
-##Current status
+## Current status
 ### Parsing classes
 my original regex was based on my own framework and did not take into consideration multiple other ways of defining class paths.
 
