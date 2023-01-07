@@ -124,7 +124,7 @@
     <div>
       <div class="text-h6 builder-color--accent text-s" >Details</div>
       <div class="text-h6">
-            <pre>
+            <pre class="break-spaces">
               {{ JSON.stringify(selectedItem, null, "\t") }}
             </pre>
       </div>

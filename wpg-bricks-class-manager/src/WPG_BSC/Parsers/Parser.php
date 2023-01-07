@@ -39,6 +39,7 @@ class Parser
     private function parse_classes($array = []){
         $unique = array_unique($array);
         foreach ($unique as $class){
+            $class = trim($class, ",.][{}" );
             $this->_parsed_classes[] = [
                 'id' => $this->_source_name . '_' . $class,
                 'name' => $class,

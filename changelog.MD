@@ -26,3 +26,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <pre><code>
 /\.([^\d][0-9a-z-A-Z_\-]+[^.,{])/
 </code></pre>
+
+## [0.0.5] Fixes
+
+### Fixes
+- Some users reported ',' being caught in regex for classes. I was not able to replicate this. I added a trim to remove unwanted characters.
+WPG_BSC/Parsers/Parser.php : Line 40:
+$class = trim($class, ",.][{}" );
+- Changed whitespace break in "Details". Long lines cause collapse of the class list

@@ -3,7 +3,7 @@
  * Plugin Name:       Bricks Class Manager
  * Plugin URI:        https://www.wpget.au
  * Description:       Adds feature to sort Bricks Global Classes
- * Version:           0.0.4
+ * Version:           0.0.5
  * Author:            Alan Blair
  * Author URI:        https://www.wpget.au
  * License:           GPL v2 or later
